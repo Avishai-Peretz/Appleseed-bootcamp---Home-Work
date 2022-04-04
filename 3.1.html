@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <form action="">
+        <!-- email input -->
+        <div>
+            
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter an Email">
+        </div>
+        <!-- text input -->
+        <div>
+            <label for="password">password</label>
+            <br>
+            <input type="password" id="password" name="password">
+        </div>
+        <!-- text area input -->
+        <div>
+            <label for="message">Message</label>
+            <br>
+            <textarea name="messahe" id="message" cols="50" rows="15" >Write Here...</textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="sex">Sex</label>
+            <select for="sex">
+            <option name="male" id="male">Male</option>
+            <option name="female" id="female">Female</option>
+            <option name="other" id="other" selected>Other</option>
+            </select>
+        </div>
+        <!-- number -->
+        <Div>
+            <Label for="age">Age</Label><br>
+            <input type="number" name="age" id="age">
+        </Div>
+        <!-- Date -->
+        <div>
+            <label for="date">Birthday</label><br>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <!-- radio -->
+        <div>
+            <label for="membership">Membership</label><br>
+            <input type="radio" name="membership" value="simple" id="membership" checked>Simple
+            <input type="radio" name="membership" value="standard" id="membership">Standard
+            <input type="radio" name="membership" value="super" id="membership">Super
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" name="Terms" value="Terms" id="ilike" checked>I agree the <a href="https://www.appleseeds.org.il/bootcamp">Terms of service</a>
+        </div>
+        <!-- input submit -->
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

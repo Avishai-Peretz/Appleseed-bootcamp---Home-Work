@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17.4</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            background: bisque;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 30vw;
+            height: 40vh;
+            background-color:black;
+            position: relative;
+        }
+
+        .container #box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 15vw;
+            height: 20vh;
+            background-color:rgb(153, 0, 0);
+        }
+
+        .container #box::after {  
+            position:absolute;
+            content: "Cool";
+            width: 15vw;
+            height: 10vh;
+            background-color: #000;
+        }
+        .container #box::before {
+            position:absolute;
+            content: "Cool2";
+            
+            width: 10vw;
+            height: 20vh;
+            background-color: #000;
+        }
+        .container::after {
+            position:absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            content: "Cool Border";
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+
+            width: 14.5vw;
+            height: 19vh;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.1</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+            'red red blue blue'
+            'green purple purple purple'
+            'yellow yellow yellow yellow';
+
+            grid-gap: 1rem;
+        }
+
+        .red {
+            grid-area: red;
+            background-color: red;
+        }
+        .blue {
+            grid-area: blue;
+            background-color: blue;
+        }
+        .green {
+            grid-area: green;
+            background-color: green;
+        }
+        .purple {
+            grid-area: purple;
+            background-color: purple;
+        }
+        .yellow {
+            grid-area: yellow;
+            background-color: yellow;
+        }
+
+        div [target] {
+            padding: 3rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red" target="box-1">1</div>
+        <div class="blue" target="box-2">2</div>
+        <div class="green" target="box-3">3</div>
+        <div class="purple" target="box-4">4</div>
+        <div class="yellow" target="box-5">5</div>
+    </div>
+</body>
+</html>

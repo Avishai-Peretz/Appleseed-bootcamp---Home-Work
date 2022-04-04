@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.3</title>
+    <style>
+            .container {
+                display: grid;
+                grid-template-areas: 
+                'red red red red'
+                'blue green green purple'
+                'yellow yellow yellow yellow';
+                grid-gap: 2rem;
+            }
+
+            .red {
+                grid-area: red;
+                background-color: red;
+            }
+
+            .blue {
+                grid-area: blue;
+                background-color: blue;
+            }
+            .green {
+                grid-area: green;
+                background-color: green;
+            }
+
+            .purple {
+                grid-area: purple;
+                background-color: purple;
+            }
+
+            .yellow {
+                grid-area: yellow;
+                background-color: yellow;
+            }
+
+            div [target] {
+                padding: 3rem;
+                border-radius: 10px;
+                text-align: left;
+                font-size: 26px;
+                font-weight: bold;
+                color: white;                
+            }
+            /* Tablets */
+            @media(max-width:768px) {
+                .container {
+                display: grid;
+                grid-template-areas: 
+                'red red red red'
+                'blue green green green'
+                'purple purple purple purple'
+                'yellow yellow yellow yellow';                
+                grid-gap: 2rem;
+                }
+            }
+            /* Phones */
+            @media(max-width:500px) {
+                .container {
+                display: grid;
+                grid-template-areas: 
+                'red'
+                'blue'
+                'green'
+                'purple'
+                'yellow'
+                ;
+                grid-gap: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="red" target="box-1">Header</div>
+            <div class="blue" target="box-2">Sidebar</div>
+            <div class="green" target="box-3">
+                <p>Content</p>
+                <p>More content than we had before so this columns is now quite tall</p>
+            </div>
+            <div class="purple" target="box-4">Sidebar 2</div>
+            <div class="yellow" target="box-5">Footer</div>
+        </div>
+    </body>
+</html>
